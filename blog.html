@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="loader-wrapper">
+        <img src="https://i.pinimg.com/originals/36/29/73/36297393c68d558e6138b823256691c3.gif" alt="Loading...">
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="./index.html">CareerGrowth</a>
@@ -32,7 +35,7 @@
     </nav>
 
     <main class="mt-5 py-5">
-        <section class="blog-header py-5 bg-light">
+        <section class="blog-header py-5 bg-light fade-in-section">
             <div class="container">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-6">
@@ -49,8 +52,22 @@
             </div>
         </section>
 
-        <section class="blog-grid py-5">
+        <section class="blog-grid py-5 fade-in-section">
             <div class="container">
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="category-filters">
+                            <button data-category="all" class="btn btn-outline-primary active">All</button>
+                            <button data-category="Self Development" class="btn btn-outline-primary">Self Development</button>
+                            <button data-category="Personal Growth" class="btn btn-outline-primary">Personal Growth</button>
+                            <button data-category="Industry Insights" class="btn btn-outline-primary">Industry Insights</button>
+                            <button data-category="Career Development" class="btn btn-outline-primary">Career Development</button>
+                            <button data-category="Learning Strategy" class="btn btn-outline-primary">Learning Strategy</button>
+                            <button data-category="Skill Assessment" class="btn btn-outline-primary">Skill Assessment</button>
+                            <button data-category="Implementation" class="btn btn-outline-primary">Implementation</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="row g-4">
                     <div class="col-md-4">
                         <div class="card h-100 border-0 shadow-sm">

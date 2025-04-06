@@ -44,4 +44,52 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+});
+
+// Loader Animation
+window.addEventListener('load', function() {
+    const loader = document.querySelector('.loader-wrapper');
+    const content = document.querySelectorAll('main, footer');
+    
+    // Hide loader
+    setTimeout(() => {
+        loader.classList.add('loader-hidden');
+        
+        // Show content with animation
+        content.forEach(element => {
+            element.classList.add('content-hidden');
+            setTimeout(() => {
+                element.classList.add('content-visible');
+            }, 50);
+        });
+
+        // Remove loader after animation
+        setTimeout(() => {
+            loader.remove();
+        }, 500);
+    }, 5);
+});
+
+// Scroll Animation
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.fade-in-section');
+    
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px'
+    };
+
+    const sectionObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        section.classList.add('fade-in-section');
+        sectionObserver.observe(section);
+    });
 }); 
