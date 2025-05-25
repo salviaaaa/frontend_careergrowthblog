@@ -4,6 +4,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const blogCards = document.querySelectorAll('.card');
     const categoryButtons = document.querySelectorAll('.category-filters button');
 
+    // Add CSS for fixed mascot
+    const style = document.createElement('style');
+    style.textContent = `
+        .fixed-mascot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+        
+        .fixed-mascot:hover {
+            opacity: 1;
+        }
+        
+        .mascot-img {
+            width: 100px;
+            height: auto;
+        }
+    `;
+    document.head.appendChild(style);
+
     // Fungsi pencarian
     function searchBlogs() {
         const searchTerm = searchInput.value.toLowerCase();

@@ -10,8 +10,14 @@
 </head>
 <body>
     <div class="loader-wrapper">
-        <img src="https://i.pinimg.com/originals/36/29/73/36297393c68d558e6138b823256691c3.gif" alt="Loading...">
+        <img src="./images/mascot.gif" alt="Loading...">
     </div>
+    
+    <!-- Fixed mascot that doesn't obstruct reading -->
+    <div class="fixed-mascot">
+        <img src="./images/mascot.png" alt="Mascot" class="mascot-img">
+    </div>
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="./index.html">CareerGrowth</a>
@@ -58,68 +64,18 @@
                     <div class="col">
                         <div class="category-filters">
                             <button data-category="all" class="btn btn-outline-primary active">All</button>
-                            <button data-category="Self Development" class="btn btn-outline-primary">Self Development</button>
-                            <button data-category="Personal Growth" class="btn btn-outline-primary">Personal Growth</button>
-                            <button data-category="Industry Insights" class="btn btn-outline-primary">Industry Insights</button>
                             <button data-category="Career Development" class="btn btn-outline-primary">Career Development</button>
-                            <button data-category="Learning Strategy" class="btn btn-outline-primary">Learning Strategy</button>
+                            <button data-category="Industry Insights" class="btn btn-outline-primary">Industry Insights</button>
                             <button data-category="Skill Assessment" class="btn btn-outline-primary">Skill Assessment</button>
-                            <button data-category="Implementation" class="btn btn-outline-primary">Implementation</button>
+                            <button data-category="Learning Strategy" class="btn btn-outline-primary">Learning Strategy</button>
+                            <button data-category="Career Growth" class="btn btn-outline-primary">Career Growth</button>
                         </div>
                     </div>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-4">
                         <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://placehold.co/400x300" class="card-img-top" alt="Understanding Self-Development">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-primary-subtle text-primary">Self Development</span>
-                                </div>
-                                <h5 class="card-title">Understanding Self-Development</h5>
-                                <p class="card-text">Learn why self-development is crucial in today's competitive job market and how it contributes to career success.</p>
-                                <a href="./pages/blog-understanding-self-development.html" class="btn btn-outline-primary">Read More</a>
-                            </div>
-                            <div class="card-footer bg-white border-0">
-                                <small class="text-muted">Published on March 21, 2025</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://placehold.co/400x300" class="card-img-top" alt="Sharpening the Axe">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-primary-subtle text-primary">Personal Growth</span>
-                                </div>
-                                <h5 class="card-title">Sharpening the Axe</h5>
-                                <p class="card-text">A classic story that illustrates the importance of continuous self-improvement in professional life.</p>
-                                <a href="./pages/blog-sharpening-the-axe.html" class="btn btn-outline-primary">Read More</a>
-                            </div>
-                            <div class="card-footer bg-white border-0">
-                                <small class="text-muted">Published on March 21, 2025</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://placehold.co/400x300" class="card-img-top" alt="Industry Perspectives">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-primary-subtle text-primary">Industry Insights</span>
-                                </div>
-                                <h5 class="card-title">Industry Perspectives</h5>
-                                <p class="card-text">Discover how different industries value self-development and what skills are in demand.</p>
-                                <a href="./pages/blog-industry-perspectives.html" class="btn btn-outline-primary">Read More</a>
-                            </div>
-                            <div class="card-footer bg-white border-0">
-                                <small class="text-muted">Published on March 21, 2025</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://placehold.co/400x300" class="card-img-top" alt="Why Self-Development is Mandatory">
+                            <img src="./images/blog/1.png" class="card-img-top" alt="Need for Self Development">
                             <div class="card-body">
                                 <div class="mb-2">
                                     <span class="badge bg-primary-subtle text-primary">Career Development</span>
@@ -129,87 +85,71 @@
                                 <a href="./pages/blog-need-for-self-development.html" class="btn btn-outline-primary">Read More</a>
                             </div>
                             <div class="card-footer bg-white border-0">
-                                <small class="text-muted">Published on March 21, 2025</small>
+                                <small class="text-muted">By Yumnaa Nuur Fatih | March 21, 2025</small>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://placehold.co/400x300" class="card-img-top" alt="Skills Companies Want">
+                            <img src="./images/blog/2.png" class="card-img-top" alt="Industry Perspectives">
                             <div class="card-body">
                                 <div class="mb-2">
                                     <span class="badge bg-primary-subtle text-primary">Industry Insights</span>
                                 </div>
-                                <h5 class="card-title">Skills Companies Want</h5>
-                                <p class="card-text">Discover the essential hard and soft skills that modern companies value most in their employees.</p>
-                                <a href="./pages/blog-skills-companies-want.html" class="btn btn-outline-primary">Read More</a>
+                                <h5 class="card-title">Some Industry Perspectives: Skills Companies Want</h5>
+                                <p class="card-text">Discover the essential hard and soft skills that modern companies value most in UI/UX designers.</p>
+                                <a href="./pages/blog-industry-perspectives.html" class="btn btn-outline-primary">Read More</a>
                             </div>
                             <div class="card-footer bg-white border-0">
-                                <small class="text-muted">Published on March 21, 2025</small>
+                                <small class="text-muted">By Faza Naziila Dias Shanti | March 21, 2025</small>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://placehold.co/400x300" class="card-img-top" alt="Ensuring Career Development">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-primary-subtle text-primary">Career Growth</span>
-                                </div>
-                                <h5 class="card-title">Ensuring Career Development</h5>
-                                <p class="card-text">Learn practical steps to align personal development with career goals for sustainable growth.</p>
-                                <a href="./pages/blog-ensuring-career-development.html" class="btn btn-outline-primary">Read More</a>
-                            </div>
-                            <div class="card-footer bg-white border-0">
-                                <small class="text-muted">Published on March 21, 2025</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://placehold.co/400x300" class="card-img-top" alt="Conducting Gap Analysis">
+                            <img src="./images/blog/3.png" class="card-img-top" alt="Conducting Gap Analysis">
                             <div class="card-body">
                                 <div class="mb-2">
                                     <span class="badge bg-primary-subtle text-primary">Skill Assessment</span>
                                 </div>
-                                <h5 class="card-title">Conducting Gap Analysis</h5>
+                                <h5 class="card-title">Conduct a Gap Analysis: Recognizing Skills Gaps</h5>
                                 <p class="card-text">Master the process of identifying and addressing skill gaps to achieve your career goals.</p>
                                 <a href="./pages/blog-gap-analysis.html" class="btn btn-outline-primary">Read More</a>
                             </div>
                             <div class="card-footer bg-white border-0">
-                                <small class="text-muted">Published on March 21, 2025</small>
+                                <small class="text-muted">By Radhita Lia Shabilla | March 21, 2025</small>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://placehold.co/400x300" class="card-img-top" alt="Creating a Skill Development Plan">
+                            <img src="./images/blog/4.png" class="card-img-top" alt="Ensuring Career Development">
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <span class="badge bg-primary-subtle text-primary">Career Growth</span>
+                                </div>
+                                <h5 class="card-title">Ensuring Your Own Career Development</h5>
+                                <p class="card-text">Learn practical steps to align personal development with career goals for sustainable growth.</p>
+                                <a href="./pages/blog-ensuring-career-development.html" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">By Salvia Maylie Budiawati | March 21, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="./images/blog/5.png" class="card-img-top" alt="Create a Plan to Fill the Gap">
                             <div class="card-body">
                                 <div class="mb-2">
                                     <span class="badge bg-primary-subtle text-primary">Learning Strategy</span>
                                 </div>
-                                <h5 class="card-title">Creating a Skill Development Plan</h5>
+                                <h5 class="card-title">Create a Plan to Fill the Gap</h5>
                                 <p class="card-text">Build an effective plan to develop new skills through various learning methods and consistent practice.</p>
                                 <a href="./pages/blog-skill-development-plan.html" class="btn btn-outline-primary">Read More</a>
                             </div>
                             <div class="card-footer bg-white border-0">
-                                <small class="text-muted">Published on March 21, 2025</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://placehold.co/400x300" class="card-img-top" alt="Implement and Evaluate Your Plan">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-primary-subtle text-primary">Implementation</span>
-                                </div>
-                                <h5 class="card-title">Implement and Evaluate Your Plan</h5>
-                                <p class="card-text">Learn how to effectively implement your development plan and evaluate your progress for continuous improvement.</p>
-                                <a href="./pages/blog-implement-evaluate-plan.html" class="btn btn-outline-primary">Read More</a>
-                            </div>
-                            <div class="card-footer bg-white border-0">
-                                <small class="text-muted">Published on March 21, 2025</small>
+                                <small class="text-muted">By Shafira Nurliza Fitri | March 21, 2025</small>
                             </div>
                         </div>
                     </div>
